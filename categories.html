@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Categories</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add your custom styles here */
+    .recipe-category {
+      background-color: #f5f5f5;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .recipe-subcategory {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .recipe {
+      width: 48%;
+      margin-bottom: 20px;
+    }
+
+    .recipe img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px; /* Add margin between image and title */
+    }
+
+    .recipe-description {
+      margin-top: 10px;
+    }
+
+    .recipe-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .recipe-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<header style="background-color: #333; color: white; text-align: center; padding: 20px; font-family: 'Arial', sans-serif;">
+  <h1>Welcome to Delicious Recipes</h1>
+  <table style="margin: 0 auto;">
+    <tr>
+      <td style="width: 33%;"></td>
+      <td>
+        <table>
+          <tr>
+            <td><a href="index.html" style="color: white; text-decoration: none;">Home</a></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><a href="categories.html" style="color: white; text-decoration: none;">Categories</a></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+            <td><a href="contactus.html" style="color: white; text-decoration: none;">Contact Us</a></td>
+          </tr>
+        </table>
+      </td>
+      <td style="width: 33%;"></td>
+    </tr>
+  </table>
+</header>
+
+
+<!-- Main Content Section -->
+<main>
+
+
+  <!-- Appetizers Section -->
+  <div class="recipe-category">
+    <h2>Appetizers</h2>
+    <div class="recipe-subcategory">
+
+      <div class="recipe" style="width: 48%; margin-bottom: 20px;">
+        <h3>Guacamole</h3>
+        <img src="images/guacamole.jpg" width=300px height=200pxalt="Guacamole" style="width: 300px; border-radius: 8px; margin-top: 10px;">
+        <p>A classic Mexican dip made with ripe avocados, tomatoes, onions, and lime juice. Perfect for parties or as a snack.</p>
+        <div class="recipe-description">
+          <a href="guacamole.html" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;"
+            onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'">Get the Recipe</a>
+        </div>
+      </div>
+
+      <div class="recipe" style="width: 48%; margin-bottom: 20px;">
+        <h3>Spinach and Artichoke Dip</h3>
+        <img src="images/spinach and artichoke.jpg" width=300px height=200px alt="Spinach and Artichoke Dip" style="width: 300px; border-radius: 8px; margin-top: 10px;">
+        <p>Creamy and cheesy dip loaded with spinach and artichokes. Ideal for sharing with friends and family.</p>
+        <div class="recipe-description">
+          <a href="spinachdip.html" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;"
+            onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'">Get the Recipe</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mains Section -->
+  <div class="recipe-category">
+    <h2>Mains</h2>
+    <div class="recipe-subcategory">
+
+      <div class="recipe" style="width: 48%; margin-bottom: 20px;">
+        <h3>Chicken Alfredo Pasta</h3>
+        <img src="images/chickenalfredopasta.jpeg" width=300px height=200pxalt="Chicken Alfredo Pasta" style="width: 300px; border-radius: 8px; margin-top: 10px;">
+        <p>Creamy and cheesy dip loaded with spinach and artichokes. Ideal for sharing with friends and family.</p>
+        <div class="recipe-description">
+          <a href="chickenpasta.html" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;"
+            onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'">Get the Recipe</a>
+        </div>
+      </div>
+
+      <div class="recipe" style="width: 48%; margin-bottom: 20px;">
+        <h3>Vegetarian Stir-Fry</h3>
+        <img src="images/vegetarian stir fry.jpg" width=300px height=200px alt="Vegetarian Stir-Fry" style="width: 300px; border-radius: 8px; margin-top: 10px;">
+        <p>Creamy and cheesy dip loaded with spinach and artichokes. Ideal for sharing with friends and family.</p>
+        <div class="recipe-description">
+          <a href="vegetarian.html" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;"
+            onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'">Get the Recipe</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Desseret Section -->
+
+  <div class="recipe-category">
+    <h2>Desserts</h2>
+    <div class="recipe-subcategory">
+
+      <div class="recipe" style="width: 48%; margin-bottom: 20px;">
+        <h3>Chocolate Lava Cake</h3>
+        <img src="images/chocolate lava cake.jpg" width=300px height=200px alt="Chocolate Lava Cake" style="width: 300px; border-radius: 8px; margin-top: 10px;">
+        <p>Creamy and cheesy dip loaded with spinach and artichokes. Ideal for sharing with friends and family.</p>
+        <div class="recipe-description">
+          <a href="chocolatelavacake.html" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;"
+            onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'">Get the Recipe</a>
+        </div>
+      </div>
+
+      <div class="recipe" style="width: 48%; margin-bottom: 20px;">
+        <h3>Strawberry Shortcake</h3>
+        <img src="images/strawberry shortcake.jpg" width=300px height=200px alt="Strawberry Shortcake" style="width: 300px; border-radius: 8px; margin-top: 10px;">
+        <p>Creamy and cheesy dip loaded with spinach and artichokes. Ideal for sharing with friends and family.</p>
+        <div class="recipe-description">
+          <a href="strawberryshrotcake.html" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;"
+            onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'">Get the Recipe</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<!-- Footer Section -->
+    <footer style="background-color: #333; color: white; text-align: center; padding: 10px;">
+        <p>Back to <a href="index.html" style="color: #007bff; text-decoration: none;">Home</a></p>
+    </footer>
+
+</body>
+</html>
